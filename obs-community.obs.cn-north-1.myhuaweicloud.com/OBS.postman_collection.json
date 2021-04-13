@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "980536c5-1ea6-417d-97d6-3e1ea90278a5",
+		"name": "OBS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://icos-registry.obs.cn-north-4.myhuaweicloud.com",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "AccessKeyId",
+						"value": "TTEZE3JFWYJPCWY1KAB2",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-obs-acl",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "key",
+							"value": "tile39proxy.yml",
+							"type": "text"
+						},
+						{
+							"key": "AccessKeyId",
+							"value": "TTEZE3JFWYJPCWY1KAB2",
+							"type": "text"
+						},
+						{
+							"key": "x-obs-acl",
+							"value": "public-read-write",
+							"type": "text"
+						},
+						{
+							"key": "policy",
+							"value": "eyJleHBpcmF0aW9uIjoiMjAyMS0wNC0xM1QxMjowMzowMy4wNjFaIiwiY29uZGl0aW9ucyI6W3siYnVja2V0IjoiaWNvcy1yZWdpc3RyeSJ9LFsiZXEiLCIkeC1vYnMtYWNsIiwicHVibGljLXJlYWQtd3JpdGUiXSxbImVxIiwiJGtleSIsInRpbGUzOXByb3h5LnltbCJdXX0=",
+							"type": "text"
+						},
+						{
+							"key": "signature",
+							"value": "DORIqO4DjDoHsRinAyJBZKZEOFA=",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/shankai/Desktop/tile39proxy.yml"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://icos-registry.obs.cn-north-4.myhuaweicloud.com",
+					"protocol": "http",
+					"host": [
+						"icos-registry",
+						"obs",
+						"cn-north-4",
+						"myhuaweicloud",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://icos-registry.obs.cn-north-4.myhuaweicloud.com Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OBS TTEZE3JFWYJPCWY1KAB2:wlx4eADXcybhjMsslQcecyLbsq4=",
+						"type": "text"
+					},
+					{
+						"key": "Date",
+						"value": "Tue, 13 Apr 2021 03:59:57 GMT",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://icos-registry.obs.cn-north-4.myhuaweicloud.com/tile39proxy.yml",
+					"protocol": "http",
+					"host": [
+						"icos-registry",
+						"obs",
+						"cn-north-4",
+						"myhuaweicloud",
+						"com"
+					],
+					"path": [
+						"tile39proxy.yml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wuhan -s3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "AccessKeyId",
+						"value": "TTEZE3JFWYJPCWY1KAB2",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-obs-acl",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "key",
+							"value": "selfservicecar_xingshenzhineng1.png",
+							"type": "text"
+						},
+						{
+							"key": "AWSAccessKeyId",
+							"value": "HOSGEWOUKMTXLI2WLLZA",
+							"type": "text"
+						},
+						{
+							"key": "x-obs-acl",
+							"value": "public-read-write",
+							"type": "text"
+						},
+						{
+							"key": "policy",
+							"value": "eyAiZXhwaXJhdGlvbiI6ICIyMDIwLTEyLTMxVDEyOjAwOjAwLjAwMFoiLCAiY29uZGl0aW9ucyI6IFsgeyAiYnVja2V0IjogImljb3MtcmVnaXN0cnkiIH0sIFsgImVxIiwgIiR4LW9icy1hY2wiLCAicHVibGljLXJlYWQtd3JpdGUiIF0sIFsgImVxIiwgIiRrZXkiLCAic2VsZnNlcnZpY2VjYXJfeGluZ3NoZW56aGluZW5nMS5wbmciIF0gXSB9",
+							"type": "text"
+						},
+						{
+							"key": "signature",
+							"value": "4o58Au/DscNIw0fGwohauD/UY4k=",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/docs/实施方案/新建文件夹/照片汇总-App/selfservicecar_xingshenzhineng1.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://icos-registry.obs.cn-central-203.whevzone.com",
+					"protocol": "http",
+					"host": [
+						"icos-registry",
+						"obs",
+						"cn-central-203",
+						"whevzone",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-s3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "AWSAuthorization",
+						"value": "OBS HOSGEWOUKMTXLI2WLLZA:fyM9tsVKEpsAoKwN8VumjPzP4MM=",
+						"type": "text"
+					},
+					{
+						"key": "Date",
+						"value": "Sat, 28 Nov 2020 16:03:25 GMT",
+						"type": "text"
+					},
+					{
+						"key": "x-obs-date",
+						"value": "Sat, 28 Nov 2020 15:56:03 GMT",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://icos-registry.obs.cn-central-203.whevzone.com/vhe_pic_1",
+					"protocol": "http",
+					"host": [
+						"icos-registry",
+						"obs",
+						"cn-central-203",
+						"whevzone",
+						"com"
+					],
+					"path": [
+						"vhe_pic_1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
