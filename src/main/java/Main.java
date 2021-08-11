@@ -12,7 +12,8 @@ public class Main {
 
     public static void main(String[] args) throws JsonProcessingException, NoSuchAlgorithmException, InvalidKeyException {
 
-        String policyBase64 = PolicySignature.policyBase64("icos-registry", objectKey);
+//        String policyBase64 = PolicySignature.policyBase64("icos-registry", objectKey);
+        String policyBase64 = PolicySignature.policyBase64("icos-twin-camera", objectKey);
         String signatureBase64 =  PolicySignature.signature(policyBase64, SK);
 
         System.out.println(policyBase64);
